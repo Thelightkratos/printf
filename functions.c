@@ -1,5 +1,6 @@
 #include "main.h"
 
+<<<<<<< HEAD
 /************************* PRINT CHAR *************************/
 
 /**
@@ -12,6 +13,9 @@
  * @size: Size specifier
  * Return: Number of chars printed
  */
+=======
+		/*print character*/
+>>>>>>> a04c03dcbe1b20f4de8df1a45c42900ca975e47f
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -19,6 +23,7 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
+<<<<<<< HEAD
 /************************* PRINT A STRING *************************/
 /**
  * print_string - Prints a string
@@ -30,6 +35,9 @@ int print_char(va_list types, char buffer[],
  * @size: Size specifier
  * Return: Number of chars printed
  */
+=======
+		/*print string*/
+>>>>>>> a04c03dcbe1b20f4de8df1a45c42900ca975e47f
 int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -74,6 +82,7 @@ int print_string(va_list types, char buffer[],
 
 	return (write(1, str, length));
 }
+<<<<<<< HEAD
 /************************* PRINT PERCENT SIGN *************************/
 /**
  * print_percent - Prints a percent sign
@@ -85,6 +94,9 @@ int print_string(va_list types, char buffer[],
  * @size: Size specifier
  * Return: Number of chars printed
  */
+=======
+		/*print percent sign*/
+>>>>>>> a04c03dcbe1b20f4de8df1a45c42900ca975e47f
 int print_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -96,6 +108,7 @@ int print_percent(va_list types, char buffer[],
 	UNUSED(size);
 	return (write(1, "%%", 1));
 }
+<<<<<<< HEAD
 
 /************************* PRINT INT *************************/
 /**
@@ -108,6 +121,9 @@ int print_percent(va_list types, char buffer[],
  * @size: Size specifier
  * Return: Number of chars printed
  */
+=======
+		/*print integer*/
+>>>>>>> a04c03dcbe1b20f4de8df1a45c42900ca975e47f
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -140,6 +156,7 @@ int print_int(va_list types, char buffer[],
 
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
+<<<<<<< HEAD
 
 /************************* PRINT BINARY *************************/
 /**
@@ -152,6 +169,9 @@ int print_int(va_list types, char buffer[],
  * @size: Size specifier
  * Return: Numbers of char printed.
  */
+=======
+			/*print binary*/
+>>>>>>> a04c03dcbe1b20f4de8df1a45c42900ca975e47f
 int print_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {

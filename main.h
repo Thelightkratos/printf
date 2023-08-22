@@ -3,6 +3,13 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
+<<<<<<< HEAD
+
+#define UNUSED(x) (void)(x)
+#define BUFF_SIZE 1024
+
+=======
+>>>>>>> 283936eee2a4ce9a9d51981a9af0b37baa1ade3f
 /* FLAGS */
 #define F_MINUS 1
 #define F_PLUS 2
@@ -14,12 +21,15 @@
 #define S_LONG 2
 #define S_SHORT 1
 
+<<<<<<< HEAD
+=======
 /**
  * struct fmt - Struct op
  *
  * @fmt: The format.
  * @fn: The function associated.
  */
+>>>>>>> 283936eee2a4ce9a9d51981a9af0b37baa1ade3f
 struct fmt
 {
 	char fmt;
@@ -27,20 +37,26 @@ struct fmt
 };
 
 
+<<<<<<< HEAD
+=======
 /**
  * typedef struct fmt fmt_t - Struct op
  *
  * @fmt: The format.
  * @fm_t: The function associated.
  */
+>>>>>>> 283936eee2a4ce9a9d51981a9af0b37baa1ade3f
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
 
+<<<<<<< HEAD
+=======
 /****************** FUNCTIONS ******************/
 
+>>>>>>> 283936eee2a4ce9a9d51981a9af0b37baa1ade3f
 /* Funtions to print chars and strings */
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
@@ -102,7 +118,11 @@ int write_unsgnd(int is_negative, int ind,
 char buffer[],
 	int flags, int width, int precision, int size);
 
+<<<<<<< HEAD
+/* UTILS */
+=======
 /****************** UTILS ******************/
+>>>>>>> 283936eee2a4ce9a9d51981a9af0b37baa1ade3f
 int is_printable(char);
 int append_hexa_code(char, char[], int);
 int is_digit(char);
@@ -110,4 +130,8 @@ int is_digit(char);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
+<<<<<<< HEAD
+#endif
+=======
 #endif /* MAIN_H */
+>>>>>>> 283936eee2a4ce9a9d51981a9af0b37baa1ade3f
